@@ -1,0 +1,65 @@
+{
+    "icecreams": [
+      {
+        "flavor": "Vanilla",
+        "description": "Classic and creamy vanilla flavor",
+        "toppings": ["Chocolate Sauce", "Sprinkles", "Whipped Cream"],
+        "price": 4.99,
+        "image": "vanilla_image_url",
+        "ingredients": [
+          { "name": "Vanilla Extract", "quantity": "2 tsp" },
+          { "name": "Heavy Cream", "quantity": "2 Cups" },
+          { "name": "Sugar", "quantity": "3/4 Cup" }
+        ]
+      },
+      {
+        "flavor": "Chocolate",
+        "description": "Rich and indulgent chocolate flavor",
+        "toppings": ["Chocolate Chips", "Cocoa Powder", "Marshmallows"],
+        "price": 5.49,
+        "image": "chocolate_image_url",
+        "ingredients": [
+          { "name": "Cocoa Powder", "quantity": "1/2 Cup" },
+          { "name": "Milk", "quantity": "1.5 Cups" },
+          { "name": "Sugar", "quantity": "1/2 Cup" }
+        ]
+      },
+      {
+        "flavor": "Strawberry",
+        "description": "Fresh and fruity strawberry flavor",
+        "toppings": ["Fresh Strawberries", "Whipped Cream", "Berry Syrup"],
+        "price": 5.29,
+        "image": "strawberry_image_url",
+        "ingredients": [
+          { "name": "Strawberries", "quantity": "2 Cups" },
+          { "name": "Heavy Cream", "quantity": "1.5 Cups" },
+          { "name": "Sugar", "quantity": "1/3 Cup" }
+        ]
+      },
+      {
+        "flavor": "Mint Chocolate Chip",
+        "description": "Cool mint with rich chocolate chips",
+        "toppings": ["Crushed Mint Leaves", "Dark Chocolate Chips", "Chocolate Syrup"],
+        "price": 5.99,
+        "image": "mint_chocolate_chip_image_url",
+        "ingredients": [
+          { "name": "Mint Extract", "quantity": "1 tsp" },
+          { "name": "Heavy Cream", "quantity": "2 Cups" },
+          { "name": "Chocolate Chips", "quantity": "1/2 Cup" }
+        ]
+      },
+      {
+        "flavor": "Cookie Dough",
+        "description": "Creamy vanilla base with chunks of cookie dough",
+        "toppings": ["Cookie Crumbs", "Chocolate Drizzle", "Mini Cookies"],
+        "price": 6.49,
+        "image": "cookie_dough_image_url",
+        "ingredients": [
+          { "name": "Cookie Dough", "quantity": "1 Cup" },
+          { "name": "Vanilla Extract", "quantity": "1 tsp" },
+          { "name": "Heavy Cream", "quantity": "2 Cups" }
+        ]
+      }
+    ]
+  }
+  
