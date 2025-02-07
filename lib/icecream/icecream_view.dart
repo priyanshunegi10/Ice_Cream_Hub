@@ -1,15 +1,15 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:frost_ice/icecream/model/icecream.dart';
 
 class IcecreamView extends StatelessWidget {
   const IcecreamView({super.key});
 
-  Future<Map<String, dynamic>> loadIcreams() async {
-    final rawIcecreams = await rootBundle.loadString('assets/icecreams.json');
+  Future<List<Icecream>?> loadIcreams() async {
+    final rawIcecreams = await rootBundle.loadString('assets/icecream.json');
     await Future.delayed(const Duration(seconds: 1));
-    final decodedIcecreams = jsonDecode(rawIcecreams);
-    return decodedIcecreams;
+    final icecreams = icecreamsDataFromJson(rawIcecreams);
+    return icecreams.icecreams;
   }
 
   @override
@@ -37,8 +37,32 @@ class IcecreamView extends StatelessWidget {
                   future: loadIcreams(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.done) {
-                      final icecreams = snapshot.data as Map<String, dynamic>;
-                      return Text(icecreams["icecreams"][0]["flavor"]);
+                      final icecreams = snapshot.data;
+                      return Container(
+                        width: MediaQuery.sizeOf(context).width,
+                        height: MediaQuery.sizeOf(context).height / 3,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            final icecream = icecreams![index];
+                            return SizedBox(
+                              width: 200,
+                              child: Card(
+                                color: Colors.orange.shade200,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: Stack(
+                                  clipBehavior: Clip.antiAlias,
+                                  children: [
+                                    Image.network(icecream.image),],
+                                ),
+                              ),
+                            );
+                          },
+                          scrollDirection: Axis.horizontal,
+                          itemCount: icecreams!.length,
+                        ),
+                      );
                     } else {
                       return const Center(
                           child: CircularProgressIndicator.adaptive());

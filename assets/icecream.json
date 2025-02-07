@@ -5,7 +5,7 @@
         "description": "Classic and creamy vanilla flavor",
         "toppings": ["Chocolate Sauce", "Sprinkles", "Whipped Cream"],
         "price": 4.99,
-        "image": "vanilla_image_url",
+        "image": "https://images.unsplash.com/photo-1560008581-09826d1de69e?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           { "name": "Vanilla Extract", "quantity": "2 tsp" },
           { "name": "Heavy Cream", "quantity": "2 Cups" },
@@ -17,7 +17,7 @@
         "description": "Rich and indulgent chocolate flavor",
         "toppings": ["Chocolate Chips", "Cocoa Powder", "Marshmallows"],
         "price": 5.49,
-        "image": "chocolate_image_url",
+        "image": "https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           { "name": "Cocoa Powder", "quantity": "1/2 Cup" },
           { "name": "Milk", "quantity": "1.5 Cups" },
@@ -29,7 +29,7 @@
         "description": "Fresh and fruity strawberry flavor",
         "toppings": ["Fresh Strawberries", "Whipped Cream", "Berry Syrup"],
         "price": 5.29,
-        "image": "strawberry_image_url",
+        "image": "https://images.unsplash.com/photo-1618485476859-01e8fa229c52?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           { "name": "Strawberries", "quantity": "2 Cups" },
           { "name": "Heavy Cream", "quantity": "1.5 Cups" },
@@ -41,7 +41,7 @@
         "description": "Cool mint with rich chocolate chips",
         "toppings": ["Crushed Mint Leaves", "Dark Chocolate Chips", "Chocolate Syrup"],
         "price": 5.99,
-        "image": "mint_chocolate_chip_image_url",
+        "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           { "name": "Mint Extract", "quantity": "1 tsp" },
           { "name": "Heavy Cream", "quantity": "2 Cups" },
@@ -53,7 +53,7 @@
         "description": "Creamy vanilla base with chunks of cookie dough",
         "toppings": ["Cookie Crumbs", "Chocolate Drizzle", "Mini Cookies"],
         "price": 6.49,
-        "image": "cookie_dough_image_url",
+        "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           { "name": "Cookie Dough", "quantity": "1 Cup" },
           { "name": "Vanilla Extract", "quantity": "1 tsp" },

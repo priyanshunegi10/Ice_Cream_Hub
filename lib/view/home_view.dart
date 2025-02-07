@@ -8,7 +8,7 @@ class HomeViews extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: IcecreamView(),
+        child: IcecreamView()
       ),
     );
   }
