@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frost_ice/icecream/icecream_view.dart';
+import 'package:frost_ice/icecream/view/icecream_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyApp extends StatelessWidget {
