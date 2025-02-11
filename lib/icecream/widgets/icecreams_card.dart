@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:frost_ice/icecream/model/icecream.dart';
 
@@ -22,9 +23,14 @@ class IcecreamCard extends StatelessWidget {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Image.network(
-              icecream.image,
-              fit: BoxFit.cover,
+            Hero(
+              tag: icecream.image,
+              child: CachedNetworkImage(
+                imageUrl: icecream.image,
+                fit: BoxFit.cover,
+                width: MediaQuery.sizeOf(context).width,
+                height: 300,
+              ),
             ),
             Align(
               alignment: Alignment.bottomLeft,

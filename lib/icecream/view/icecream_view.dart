@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:frost_ice/icecream/model/icecream.dart';
+import 'package:frost_ice/icecream/view/icecream_detail_view.dart';
 import 'package:frost_ice/icecream/widgets/icecreams_card.dart';
 
 class IcecreamView extends StatelessWidget {
@@ -56,14 +57,19 @@ class IcecreamView extends StatelessWidget {
                                     final icecream = icecreams[index];
 
                                     return InkWell(
-                                        onTap: () {
-                                          Navigator.push(context,
-                                           MaterialPageRoute(
-                                            builder: context) => IcecreamCard
-                                            (icecream: icecream,),);
-                                        },
-                                        child:
-                                            IcecreamCard(icecream: icecream));
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                IcecreamDetailView(
+                                                    icecream:
+                                                        icecream),
+                                          ),
+                                        );
+                                      },
+                                      child: IcecreamCard(icecream: icecream),
+                                    );
                                   },
                                   scrollDirection: Axis.horizontal,
                                   itemCount: icecreams!.length,
